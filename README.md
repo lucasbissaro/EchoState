@@ -1,5 +1,7 @@
 This lib creates an echo state model, and realizes a data transformation to a high dimensional space, with a temporal context together.
+
 This is a Recurrent model, but differently from others, the ESN doesn't do classification, so U can use other methods to do this. 
+
 In https://dl.acm.org/doi/pdf/10.1145/3412841.3441983?casa_token=Z0PInSxsm3QAAAAA:6lvkh7XywSk2P1JCyoef1ps-ETUD3nfcGGo2eS7ffbxG9J3F3DluuUwa-Fn7wd4EQHBgVEwrxEShbmU I did a study and show that the best methods are SVM Linear, SVM Gaussian, and KNN.
 
 
