@@ -6,12 +6,14 @@ In https://dl.acm.org/doi/pdf/10.1145/3412841.3441983?casa_token=Z0PInSxsm3QAAAA
 
 
 In this struct, it's also possible to choose the structure used to create the reservoir, which can be:
+
 regular, 
 smallWord, 
 random
 
 
 It's also possible to use a parameter to control de reservoir. The parameters are:
+
 shape: Format of input data
 network: Enumerate (random, smallword and regular) 
 size: Size of network
@@ -23,6 +25,7 @@ nGrupos=5: 1/nGroups is the number of neighbors chosen for smallword and regular
 
 
 Default values:
+
 network = 'random'
 size = 100
 res='tudo'
@@ -35,6 +38,7 @@ distancia = 1
 
 
 How to use:
+
 import reservoir as rv
 model = rv.Reservoir(shape, size = 100, network='Regular')          
 trainData = model.transform(trainData)
