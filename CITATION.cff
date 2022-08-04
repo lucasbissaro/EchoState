@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Bissaro"
+  given-names: "Lucas"
+  orcid: ""
+- family-names: "Carneiro"
+  given-names: "Murillo"
+  orcid: "https://orcid.org/0000-0002-2915-8990"
+title: "Regular echo state networks: simple and accurate reservoir models to real-world applications"
+version: 2.0.4
+doi: 10.1145/3412841.3441983
+date-released: 2021-04-22
+url: "https://dl.acm.org/doi/pdf/10.1145/3412841.3441983?casa_token=Z0PInSxsm3QAAAAA:6lvkh7XywSk2P1JCyoef1ps-ETUD3nfcGGo2eS7ffbxG9J3F3DluuUwa-Fn7wd4EQHBgVEwrxEShbmU"
