@@ -1,40 +1,42 @@
-This lib creates an echo state model, and realizes a data transformation to a high dimensional space, with a temporal context together.
+This lib creates an echo state model, and realizes a data transformation to a high dimensional space, adding also the temporal context.
 
-This is a Recurrent model, but differently from others, the ESN doesn't do classification, so U can use other methods to do this. 
+This is a Recurrent model, but differently from others, the ESN doesn't do classification, after the transformation you can use any other method.
 
 In https://dl.acm.org/doi/pdf/10.1145/3412841.3441983?casa_token=Z0PInSxsm3QAAAAA:6lvkh7XywSk2P1JCyoef1ps-ETUD3nfcGGo2eS7ffbxG9J3F3DluuUwa-Fn7wd4EQHBgVEwrxEShbmU I did a study and show that the best methods are SVM Linear, SVM Gaussian, and KNN.
 
 
-In this struct, it's also possible to choose the structure used to create the reservoir, which can be:
+
+In this module, it's possible to choose the structure used to create the reservoir, which can be:
 
 regular, 
 smallWord, 
 random
 
 
-It's also possible to use a parameter to control de reservoir. The parameters are:
+It's also possible to use the follow parameters to control the reservoir:
 
-shape: Format of input data
-network: Enumerate (random, smallword and regular) 
-size: Size of network
-W=[]: if created an echo state before, it's possible to pass the input matrix.
-Win=[]: if created an echo state before, it's possible to pass the reservoir matrix.
-mu: Mean of reservoir values
-sigma: The reservoir use a normal distribution in values, so this is the sigma of distribution
-nGrupos=5: 1/nGroups is the number of neighbors chosen for smallword and regular
-
-
-Default values:
-
-network = 'random'
-size = 100
-res='tudo'
-W=[]
-Win=[]
-mu = 0
-sigma = 0.08
-nGrupos = 5
-distancia = 1
+  shape: (i,j,k), Required
+        Format of input data
+  network: string, Default ='random'
+        Enumerate (random, smallword and regular) 
+  size: float, Default = 100
+        Size of network
+  W: array(float), Default = []
+        if created an echo state before, it's possible to pass the input matrix.
+  Win: array(float), Default = []
+        if created an echo state before, it's possible to pass the reservoir matrix.
+  mu: float, Default = 0
+        Mean of reservoir values
+  sigma: float, Default = 0.08
+        The reservoir use a normal distribution in values, so this is the sigma of distribution
+  nGrupos: float, Default = 5
+        1/nGroups is the number of neighbors chosen for smallword and regular
+  res: string, Default = 'Tudo', 
+      Enumerate ('tudo', 'ultima'). The final result, can be the transformation of reservoir for all layers in the temporal context of the data inputed ('tudo'), or only one result for the all sequence, getting the last transformation ('ultima').
+      
+  distancia: int, Default = 1
+       A midterm between 'tudo' and 'last', the return only have the result to every 'distancia' between layers on the temporal context.
+  
 
 
 How to use:
