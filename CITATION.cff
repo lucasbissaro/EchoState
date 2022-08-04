@@ -4,11 +4,28 @@ authors:
 - family-names: "Bissaro"
   given-names: "Lucas"
   orcid: ""
-- family-names: "Carneiro"
-  given-names: "Murillo"
-  orcid: "https://orcid.org/0000-0002-2915-8990"
 title: "Regular echo state networks: simple and accurate reservoir models to real-world applications"
 version: 2.0.4
-doi: 10.1145/3412841.3441983
+doi: "10.1145/3412841.3441983"
 date-released: 2021-04-22
 url: "https://dl.acm.org/doi/pdf/10.1145/3412841.3441983?casa_token=Z0PInSxsm3QAAAAA:6lvkh7XywSk2P1JCyoef1ps-ETUD3nfcGGo2eS7ffbxG9J3F3DluuUwa-Fn7wd4EQHBgVEwrxEShbmU"
+preferred-citation:
+  type: conference-paper
+  authors:
+  - family-names: "Bissaro"
+    given-names: "Lucas"
+    orcid: ""
+  - family-names: "Carneiro"
+    given-names: "Murillo"
+    orcid: "https://orcid.org/0000-0002-2915-8990"
+  doi: "10.1145/3412841.3441983"
+  month: 04
+  title: "Regular echo state networks: simple and accurate reservoir models to real-world applications"
+  volume: 1
+  start: 1063 # First page number
+  end: 1069 # Last page number
+  year: 2021
+  conference:
+    name: "Symposium on Applied Computing"
+  collection-title: "SAC 21 - Proceedings of the 36th Annual ACM Symposium on Applied Computing"
+  
